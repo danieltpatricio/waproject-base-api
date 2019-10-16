@@ -1,5 +1,5 @@
 {
-  "name": "waproject-base",
+  "name": "test-api",
   "version": "0.0.1",
   "description": "Api Base for WaProject",
   "main": "server/main.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "waproject-repository"
+    "url": "teste"
   },
   "scripts": {
     "dev": "yarn ts-node-dev --inspect=0.0.0.0:5859 --respawn --transpileOnly --project tsconfig.dev.json ./src/server/main.ts",
@@ -91,11 +91,8 @@
     "cross-env": "5.2.0",
     "eslint": "6.2.1",
     "husky": "3.0.4",
-    "inquirer": "6.5.1",
     "jest": "24.9.0",
     "jest-extended": "0.11.2",
-    "ora": "3.4.0",
-    "rimraf": "3.0.0",
     "sqlite3": "4.1.0",
     "ts-jest": "24.0.2",
     "ts-node-dev": "1.0.0-pre.39",
