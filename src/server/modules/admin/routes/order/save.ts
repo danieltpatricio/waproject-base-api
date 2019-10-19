@@ -9,7 +9,7 @@ export async function save(req: Request, res: Response, next: NextFunction): Pro
     const order = await orderService.save(model);
     res.status(model.id ? 200 : 201).json(order);
   } catch (err) {
-    if (err.message === 'email-unavailable') {
+    if (err.message === 'description-unavailable') {
       res.status(409).json(err);
       return;
     }
