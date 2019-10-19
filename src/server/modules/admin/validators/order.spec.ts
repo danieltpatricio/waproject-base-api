@@ -95,7 +95,6 @@ describe('admin/validators/order', () => {
     expect(data.message[0].type).toEqual('any.required');
   });
 
-
   it('should return invalid when description length is greather than 150', async () => {
     const model = lodash.clone(order);
     model.description = new Array(152).join('a');
