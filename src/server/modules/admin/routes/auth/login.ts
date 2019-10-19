@@ -4,7 +4,7 @@ import { NextFunction, Request, Response } from 'express';
 
 export async function login(req: Request, res: Response, next: NextFunction): Promise<void> {
   try {
-    const {email, password} = await loginValidator.validate(req.body);
+    const { email, password } = await loginValidator.validate(req.body);
     const token = await authService.login(email, password);
 
     res.setHeader('X-Token', token);
